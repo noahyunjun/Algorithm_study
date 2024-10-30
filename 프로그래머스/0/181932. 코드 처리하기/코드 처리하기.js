@@ -10,8 +10,6 @@ function solution(code) {
             ret = idx%2===1 ? ret+s : ret //홀수일경우 추가
         }
     });
-    ret==="" ? ret='EMPTY' : ret
-
+    ret==='' ? ret='EMPTY' : ret
     return ret
-    
 }
