@@ -3,10 +3,5 @@ const compareNumber=(n,m,ineq)=>{
 }
 
 function solution(ineq, eq, n, m) {
-    if(eq === '='){
-        return n===m ? 1 : compareNumber(n,m,ineq)
-    }
-    else{
-        return compareNumber(n,m,ineq)    
-    } 
+    return eq === '=' ? n===m ? 1 : compareNumber(n,m,ineq) : compareNumber(n,m,ineq)       
 }
